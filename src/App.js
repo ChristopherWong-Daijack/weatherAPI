@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import WeatherAPI from './componenets/WeatherAPI'
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Redirect, Route, Switch } from 'react-router-dom';
 
 function App() {
   
-
 
   return (
     <div className="App">
       <header className="App-header">
         <Switch>
         <Route exact path='/' render={()=>(
-          <div >Welcome to my WeatherAPI</div>
+          <div >
+            <header>
+              <Link to='/weatherAPI'>Navigate to Weather API</Link>
+            </header>
+            Welcome to my WeatherAPI
+            
+          </div>
+          
           )}/>
-
           <Route exact path='/weatherAPI' render={()=>(
-          <WeatherAPI/>
-          )}/>
+            <WeatherAPI/>
+        )}/>
         </Switch>
         
       </header>
