@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import WeatherAPI from './componenets/WeatherAPI'
+import WeatherAPI from './componenets/weatherAPI'
 import './App.css';
 import { Link, Redirect, Route, Switch } from 'react-router-dom';
 
